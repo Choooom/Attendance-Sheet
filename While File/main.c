@@ -206,7 +206,7 @@ int main() {
 
                     printf("\nSorry, the Attendance Sheet has now closed.\nNext time, try waking up earlier :   ^)\n");
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-1\\BSCS_IT-1_Attendance_Sheet.txt", "r");
+                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-1\\BSIT_YA-1_Attendance_Sheet.txt", "r");
 
                         for (c = getc(fpointer); c != EOF; c = getc(fpointer))
                             if (c == '^')
