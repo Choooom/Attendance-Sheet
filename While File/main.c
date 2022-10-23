@@ -183,6 +183,8 @@ int main() {
 
             }else{
                 printf("Error! Invalid Section");
+		sleep(3);
+		system("cls");    
             }
 
         }else if(strcmp(strupr(course), "BSIT") == 0){
@@ -325,9 +327,13 @@ int main() {
 
             }else{
                 printf("Error! Invalid Section");
+		sleep(3);
+		system("cls");     
             }
         }else{
             printf("Error! Invalid Course!");
+	    sleep(3);
+	    system("cls");   
         }
 	}
 	return 0;
