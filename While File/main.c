@@ -7,7 +7,7 @@ int main() {
 
     int studentCount = 0;
     char course[50], section[50], last_name[50], first_name[50], vaccinationStatus[50], contactNumber[15];
-    int startOfclass = 1666254900, absentCutoff = 1666255020;
+    int startOfclass = 1666580405, absentCutoff = 1666584005;
     int endOfline = 0;
     int totalStudents = 6, presentStudents = 0, lateStudents = 0;
     int absentStudents, timesUp = 0;
