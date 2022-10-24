@@ -13,25 +13,25 @@ int main() {
     int absentStudents, timesUp = 0;
     char c, b;
 
-/*
+
     FILE *fpointer;
 
-    fpointer  = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSCS 1-YA-1\\BSCS_YA-1_Attendance_Sheet.txt", "w");
+    fpointer  = fopen("BSCS_YA-1_Attendance_Sheet.txt", "w");
         fprintf(fpointer, "%s\n", HEADER);
 	fclose(fpointer);
 
-    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSCS 1-YA-2\\BSCS_YA-2_Attendance_Sheet.txt", "w");
+    fpointer = fopen("BSCS_YA-2_Attendance_Sheet.txt", "w");
         fprintf(fpointer, "%s\n", HEADER);
 	fclose(fpointer);
 
-    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-1\\BSIT_YA-1_Attendance_Sheet.txt", "w");
+    fpointer = fopen("BSIT_YA-1_Attendance_Sheet.txt", "w");
         fprintf(fpointer, "%s\n", HEADER);
 	fclose(fpointer);
 
-    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-2\\BSIT_YA-2_Attendance_Sheet.txt", "w");
+    fpointer = fopen("BSIT_YA-2_Attendance_Sheet.txt", "w");
         fprintf(fpointer, "%s\n", HEADER);
 	fclose(fpointer);
-*/
+
 
 	while(studentCount < 6 && timesUp != 1){
 
@@ -64,14 +64,14 @@ int main() {
 
                     printf("\nSorry, the Attendance Sheet has now closed.\nNext time, try waking up earlier :   ^)\n");
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSCS 1-YA-1\\BSCS_YA-1_Attendance_Sheet.txt", "r");
+                    fpointer = fopen("BSCS_YA-1_Attendance_Sheet.txt", "r");
 
                         for (c = getc(fpointer); c != EOF; c = getc(fpointer))
                             if (c == '^')
                             presentStudents += 1;
                     fclose(fpointer);
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSCS 1-YA-1\\BSCS_YA-1_Attendance_Sheet.txt", "r");
+                    fpointer = fopen("BSCS_YA-1_Attendance_Sheet.txt", "r");
                         for (b = getc(fpointer); b != EOF; b = getc(fpointer))
                             if (b == '~')
                             lateStudents += 1;
@@ -80,7 +80,7 @@ int main() {
 
                     absentStudents = totalStudents - (presentStudents + lateStudents);
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSCS 1-YA-1\\BSCS_YA-1_Attendance_Sheet.txt", "a");
+                    fpointer = fopen("BSCS_YA-1_Attendance_Sheet.txt", "a");
                         fprintf(fpointer, "\nSummary:\n");
                         fprintf(fpointer, "\nNumber of Students Present: %d", presentStudents);
                         fprintf(fpointer, "\nNumber of Students Late: %d", lateStudents);
@@ -91,7 +91,7 @@ int main() {
 
                 }else{
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSCS 1-YA-1\\BSCS_YA-1_Attendance_Sheet.txt", "a");
+                    fpointer = fopen("BSCS_YA-1_Attendance_Sheet.txt", "a");
 
                         fprintf(fpointer, "\nName: %s, %s", last_name, first_name);
                         fprintf(fpointer, "\nContact Number: %s", contactNumber);
@@ -132,14 +132,14 @@ int main() {
 
                     printf("\nSorry, the Attendance Sheet has now closed.\nNext time, try waking up earlier :   ^)\n");
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSCS 1-YA-2\\BSCS_YA-2_Attendance_Sheet.txt", "r");
+                    fpointer = fopen("BSCS_YA-2_Attendance_Sheet.txt", "r");
 
                         for (c = getc(fpointer); c != EOF; c = getc(fpointer))
                             if (c == '^')
                             presentStudents += 1;
                     fclose(fpointer);
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSCS 1-YA-2\\BSCS_YA-2_Attendance_Sheet.txt", "r");
+                    fpointer = fopen("BSCS_YA-2_Attendance_Sheet.txt", "r");
                         for (b = getc(fpointer); b != EOF; b = getc(fpointer))
                             if (b == '~')
                             lateStudents += 1;
@@ -148,7 +148,7 @@ int main() {
 
                     absentStudents = totalStudents - (presentStudents + lateStudents);
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSCS 1-YA-2\\BSCS_YA-2_Attendance_Sheet.txt", "a");
+                    fpointer = fopen("BSCS_YA-2_Attendance_Sheet.txt", "a");
                         fprintf(fpointer, "\nSummary:\n");
                         fprintf(fpointer, "\nNumber of Students Present: %d", presentStudents);
                         fprintf(fpointer, "\nNumber of Students Late: %d", lateStudents);
@@ -159,7 +159,7 @@ int main() {
 
                 }else{
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSCS 1-YA-2\\BSCS_YA-2_Attendance_Sheet.txt", "a");
+                    fpointer = fopen("BSCS_YA-2_Attendance_Sheet.txt", "a");
 
                         fprintf(fpointer, "\nName: %s, %s", last_name, first_name);
                         fprintf(fpointer, "\nContact Number: %s", contactNumber);
@@ -208,14 +208,14 @@ int main() {
 
                     printf("\nSorry, the Attendance Sheet has now closed.\nNext time, try waking up earlier :   ^)\n");
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-1\\BSIT_YA-1_Attendance_Sheet.txt", "r");
+                    fpointer = fopen("BSIT_YA-1_Attendance_Sheet.txt", "r");
 
                         for (c = getc(fpointer); c != EOF; c = getc(fpointer))
                             if (c == '^')
                             presentStudents += 1;
                     fclose(fpointer);
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-1\\BSIT_YA-1_Attendance_Sheet.txt", "r");
+                    fpointer = fopen("BSIT_YA-1_Attendance_Sheet.txt", "r");
                         for (b = getc(fpointer); b != EOF; b = getc(fpointer))
                             if (b == '~')
                             lateStudents += 1;
@@ -224,7 +224,7 @@ int main() {
 
                     absentStudents = totalStudents - (presentStudents + lateStudents);
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-1\\BSIT_YA-1_Attendance_Sheet.txt", "a");
+                    fpointer = fopen("BSIT_YA-1_Attendance_Sheet.txt", "a");
                         fprintf(fpointer, "\nSummary:\n");
                         fprintf(fpointer, "\nNumber of Students Present: %d", presentStudents);
                         fprintf(fpointer, "\nNumber of Students Late: %d", lateStudents);
@@ -235,7 +235,7 @@ int main() {
 
                 }else{
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-1\\BSIT_YA-1_Attendance_Sheet.txt", "a");
+                    fpointer = fopen("BSIT_YA-1_Attendance_Sheet.txt", "a");
 
                         fprintf(fpointer, "\nName: %s, %s", last_name, first_name);
                         fprintf(fpointer, "\nContact Number: %s", contactNumber);
@@ -276,14 +276,14 @@ int main() {
 
                     printf("\nSorry, the Attendance Sheet has now closed.\nNext time, try waking up earlier :   ^)\n");
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-2\\BSIT_YA-2_Attendance_Sheet.txt", "r");
+                    fpointer = fopen("BSIT_YA-2_Attendance_Sheet.txt", "r");
 
                         for (c = getc(fpointer); c != EOF; c = getc(fpointer))
                             if (c == '^')
                             presentStudents += 1;
                     fclose(fpointer);
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-2\\BSIT_YA-2_Attendance_Sheet.txt", "r");
+                    fpointer = fopen("BSIT_YA-2_Attendance_Sheet.txt", "r");
                         for (b = getc(fpointer); b != EOF; b = getc(fpointer))
                             if (b == '~')
                             lateStudents += 1;
@@ -292,7 +292,7 @@ int main() {
 
                     absentStudents = totalStudents - (presentStudents + lateStudents);
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-2\\BSIT_YA-2_Attendance_Sheet.txt", "a");
+                    fpointer = fopen("BSIT_YA-2_Attendance_Sheet.txt", "a");
                         fprintf(fpointer, "\nSummary:\n");
                         fprintf(fpointer, "\nNumber of Students Present: %d", presentStudents);
                         fprintf(fpointer, "\nNumber of Students Late: %d", lateStudents);
@@ -303,7 +303,7 @@ int main() {
 
                 }else{
 
-                    fpointer = fopen("C:\\Users\\Romille Ilaida\\Desktop\\Attendance Folder\\BSIT 1-YA-2\\BSIT_YA-2_Attendance_Sheet.txt", "a");
+                    fpointer = fopen("BSIT_YA-2_Attendance_Sheet.txt", "a");
 
                         fprintf(fpointer, "\nName: %s, %s", last_name, first_name);
                         fprintf(fpointer, "\nContact Number: %s", contactNumber);
